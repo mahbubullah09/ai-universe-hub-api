@@ -122,13 +122,13 @@ const handleModal= async(ID) =>{
 
         <div class="right border border-solid border-gray-300 rounded-md p-3 text-center">
             <figure class="relative">
-                <img src="./Rectangle 23.png" alt="">
+                <img src=${modalData.image_link[0]} alt="">
                 <div class="bg-[#EB5757] text-white text-xs rounded-md absolute top-1 right-1 px-4 py-1">
                     <p>94% accuracy</p>
                 </div>
             </figure>
-            <h4 class="text-xl font-semibold text-black my-3">Hi, how are you doing today?</h4>
-            <p class="text-[#585858] text-sm px-4">I'm doing well, thank you for asking. How can I assist you today?</p>
+            <h4 class="text-xl font-semibold text-black my-3">${modalData.input_output_examples[0].input}</h4>
+            <p class="text-[#585858] text-sm px-4">${modalData.input_output_examples[0].output}</p>
 
 
         </div>
