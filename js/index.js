@@ -32,10 +32,10 @@ const displayCard = (ai) =>{
         <hr class="my-2">
         <div class="flex justify-between items-center">
             <div>
-                <h4 class="font-bold text-xl mb-2">ChatGPT</h4>
+                <h4 class="font-bold text-xl mb-2">${card.name}</h4>
                 <div class="flex justify-center gap-1 items-center text-[#585858] text-sm my-">
                     <i class="fa-solid fa-calendar-days"></i>
-                    <p>11/01/2022</p>
+                    <p>${card.published_in}</p>
                 </div>
 
             </div>
@@ -88,13 +88,13 @@ const handleModal= async(ID) =>{
             <h4 class="text-xl font-semibold text-black  ">${modalData.description}</h4>
             <div class="grid  grid-cols-1  md:grid-cols-3 gap-2 text-center my-4 items-center ">
                 <div class="bg-white p-3 font-bold text-sm rounded-md text-[#03A30A] h-24 ">
-                    <h4 class="item-center py-5">${modalData.pricing[0].price} ${modalData.pricing[0].plan}</h4>
+                    <h4 class="item-center py-5">${modalData?.pricing[0]?.price} ${modalData?.pricing[0]?.plan}</h4>
                 </div>
                 <div class="bg-white p-3 font-bold text-sm rounded-md text-[#F28927]  h-24 ">
-                    <h4 class="item-center py-5">${modalData.pricing[1].price} ${modalData.pricing[1].plan}</h4>
+                    <h4 class="item-center py-5">${modalData?.pricing[1]?.price} ${modalData?.pricing[1]?.plan}</h4>
                 </div>
                 <div class="bg-white p-3 font-bold text-sm rounded-md text-[#EB5757] h-24 ">
-                    <h4>${modalData.pricing[2].price} ${modalData.pricing[2].plan}</h4>
+                    <h4>${modalData?.pricing[2]?.price} ${modalData?.pricing[2]?.plan}</h4>
                 </div>
             </div>
 
