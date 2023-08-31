@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <section class="max-w-4xl mx-auto">
+    <section class="max-w-4xl mx-auto mb-16">
         <div class=" text-center mt-5 ">
             <h4 class="text-2xl font-bold my-3 ">AI Universe Hub</h4>
             <button class="bg-[#EB5757] text-white text-xs font-semibold py-2 px-4 rounded-md">Sort By Date</button>
@@ -23,7 +23,8 @@
 
     <main class="max-w-5xl mx-auto">
         <div class="grid grid-cols-3 px-4 gap-4">
-            <div class="p-4 border border-gray-400 border-solid rounded-md">
+            <div onclick="my_modal_3.showModal()"
+                class="p-4 border border-gray-400 border-solid rounded-md cursor-pointer">
                 <figure class="rounded-md">
                     <img src="./Rectangle 23.png" alt="">
                 </figure>
@@ -43,10 +44,68 @@
                         </div>
 
                     </div>
-                    <i class="fa-solid fa-arrow-right rounded-full bg-white p-2 " style="color: #EB5757;"></i>
+                    <i class="fa-solid fa-arrow-right rounded-full  bg-[#FEF7F7] p-2 " style="color: #EB5757;"></i>
                 </div>
             </div>
         </div>
+
+
+        <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="my_modal_3" class="modal ">
+            <form method="dialog" class="modal-box max-w-3xl">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="left bg-[#0d6efd] bg-opacity-5 border border-solid border-[#EB5757] rounded-md p-6">
+
+                        <h4 class="text-xl font-semibold text-black  ">ChatGPT is an AI-powered chatbot platform that
+                            uses OpenAI's GPT technology to simulate human conversation.</h4>
+                        <div class="grid grid-cols-3 gap-4 text-center my-4">
+                            <div class="bg-white p-3 font-bold text-sm rounded-md text-[#03A30A]">
+                                <h4>$10/ month Basic</h4>
+                            </div>
+                            <div class="bg-white p-3 font-bold text-sm rounded-md text-[#F28927]">
+                                <h4>$50/ month Pro</h4>
+                            </div>
+                            <div class="bg-white p-3 font-bold text-sm rounded-md text-[#EB5757]">
+                                <h4>Contact us Enterprise</h4>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between ">
+                            <div class="left">
+                                <h4 class="font-bold text-xl mb-2">Features</h4>
+
+                                <ul class="list-disc text-xs text-[#585858]  pl-4">
+                                    <li>Customizable responses</li>
+                                    <li>Multilingual support </li>
+                                    <li>Seamless integration</li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <h4 class="font-bold text-xl mb-2">Integrations</h4>
+
+                                <ul class="list-disc text-xs text-[#585858]  pl-4">
+                                    <li>FB Messenger</li>
+                                    <li>Slack </li>
+                                    <li>Telegram</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="right"></div>
+
+
+
+                </div>
+            </form>
+        </dialog>
 
 
     </main>
